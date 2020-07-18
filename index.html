@@ -1,8 +1,58 @@
 <!DOCTYPE html>
+
 <head>
   <title>Survey Page</title>
   <link rel='stylesheet' href='styles.css'>
 </head>
+
 <body>
+
+  <h1 id='title'>SURVEY</h1>
+  <p id='description'>Please complete this survey to the best of your ability.</p>
+  <form id='survey-form'>
+
+    <label for='name' id='name-label'>
+      Name
+      <input id='name' type='text' required>
+    </label>
+
+    <label for='email' id='email-label'>
+      Email
+      <input id='email' type='email' required>
+    </label>
+
+    <label for='age' id='number-label'>
+      Age (optional)
+      <input type='number' id='number'>
+    </label>
+
+<p>how happy are you?</p>
+    <label>
+      <input type='radio'>Very happy
+    </label>
+    <label>
+      <input type='radio'> Happy
+    </label>
+    <label>
+      <input type='radio'> Not Happy
+    </label>
+<p>how have you tried to get a job?</p>
+    <label for='linkedin'>
+      <input id='linkedin' type='checkbox'>
+      Linkedin
+    </label>
+    <label for='networking'>
+      <input id='networking' type='checkbox'>
+      Networking
+    </label>
+    <label for='career sites'>
+      <input id='career sites' type='checkbox'>
+      Career sites
+    </label>
+
+
+
+    <button type='submit'>Submit Your Answers</button>
+  </form>
 
 </body>
