@@ -1,6 +1,8 @@
 body{
   font-family: sans-serif;
   text-align: center;
+  background-color: grey;
+  
 }
 #title {
   color:green;
@@ -12,4 +14,5 @@ body{
 #survey-form{
   color: orange;
 }
+
 
