@@ -7,52 +7,64 @@
 
 <body>
 
-  <h1 id='title'>SURVEY</h1>
+  <h1 id='title'>EMPLOYMENT SURVEY</h1>
   <p id='description'>Please complete this survey to the best of your ability.</p>
   <form id='survey-form'>
 
     <label for='name' id='name-label'>
       Name
-      <input id='name' type='text' required>
+      <input id='name' type='text' required placeholder='Enter your name'>
     </label>
 
     <label for='email' id='email-label'>
       Email
-      <input id='email' type='email' required>
+      <input id='email' type='email' required placeholder='Enter your Email'>
     </label>
 
     <label for='age' id='number-label'>
       Age (optional)
-      <input type='number' id='number'>
+      <input type='number' id='number' placeholder='Age' min='13' max='70'>
     </label>
 
-<p>how happy are you?</p>
-    <label>
-      <input type='radio'>Very happy
+    <p id='dropdown'>Which option best describes your employment status?</p>
+    <select>
+      <option>Select employment status</option>
+      <option>Unemployed</option>
+      <option>Underemmployed</option>
+      <option>Employed</option>
+    </select>
+
+    <p>How satisfied are you with your current position??</p>
+    <label for='very unsatisfied'>
+      <input id='very unsatisfied' type='radio' name='satisfaction' value='very unsatisfied'>Very unsatisfied
     </label>
-    <label>
-      <input type='radio'> Happy
+    <label for='unsatisfied'>
+      <input id='unsatisfied' type='radio' name='satisfaction' value='unsatisfied'>Unsatisfied
     </label>
-    <label>
-      <input type='radio'> Not Happy
+    <label for='satisfied'>
+      <input id='satisfied' type='radio' name='satisfaction' value='satisfied'>Satisfied
     </label>
-<p>how have you tried to get a job?</p>
+    <label for='very satisfied'>
+      <input id='very satisfied' type='radio' name='satisfaction' value='very satisfied'>Very Satisfied
+    </label>
+
+
+    <p>how have you tried to get a job?</p>
     <label for='linkedin'>
-      <input id='linkedin' type='checkbox'>
-      Linkedin
+      <input id='linkedin' type='checkbox' name='job' value='linkedin'>Linkedin
     </label>
     <label for='networking'>
-      <input id='networking' type='checkbox'>
-      Networking
+      <input id='networking' type='checkbox' name='job' value='networking'>Networking
     </label>
     <label for='career sites'>
-      <input id='career sites' type='checkbox'>
-      Career sites
+      <input id='career sites' type='checkbox' name='job' value='career sites'>Career Sites
     </label>
 
 
+    <p>Any additional information that you'd like to provide?</p>
+    <textarea form='survey-form'>Enter your comment</textarea>
 
-    <button type='submit'>Submit Your Answers</button>
+    <button id='submit' type='submit'>Submit Your Answers</button>
   </form>
 
 </body>

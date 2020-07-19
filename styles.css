@@ -1,3 +1,7 @@
+body{
+  font-family: sans-serif;
+  text-align: center;
+}
 #title {
   color:green;
 }
@@ -8,3 +12,4 @@
 #survey-form{
   color: orange;
 }
+
